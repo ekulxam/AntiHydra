@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "antihydra",
+	"version": "${version}",
+	"name": "AntiHydra",
+	"description": "Sever severe",
+	"authors": [
+		"Survivalblock"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/antihydra/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "survivalblock.antihydra.common.AntiHydra"
+		],
+		"fabric-datagen": [
+          "survivalblock.antihydra.client.datagen.AntiHydraDataGenerator"
+		]
+	},
+	"mixins": [
+		"antihydra.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
